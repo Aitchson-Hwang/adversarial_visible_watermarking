@@ -1,4 +1,4 @@
-# adversarial_visible_watermarking
+# New Visible Watermark Protection Mechanism Based on Information Hiding
 
 [paper](https://ieeexplore.ieee.org/document/11095771)
 
