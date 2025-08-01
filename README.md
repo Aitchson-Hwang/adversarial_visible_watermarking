@@ -1,6 +1,6 @@
 # New Visible Watermark Protection Mechanism Based on Information Hiding
 
-[Paper](https://ieeexplore.ieee.org/document/11095771)  [New proposed dataset](https://huggingface.co/datasets/WendellH/Watermark_dataset_LOGO-Full_Multi) [Other dataset](https://github.com/vinthony/deep-blind-watermark-removal?tab=readme-ov-file#Resources)
+[Paper](https://ieeexplore.ieee.org/document/11095771) / [New proposed dataset(LOGO-Multi and LOGO-Full)](https://huggingface.co/datasets/WendellH/Watermark_dataset_LOGO-Full_Multi) / [Other dataset (LOGO-H, LOGO-L, LOGO-Gray)](https://github.com/vinthony/deep-blind-watermark-removal?tab=readme-ov-file#Resources)
 
 To be continued...
 
