@@ -17,7 +17,7 @@ With the rise of digital media, protecting image property has become a critical 
   year={2025},
   volume={20},
   pages={7764-7776},
-  doi={10.1109/TIFS.2025.3592572}
+  doi={10.1109/TIFS.2025.3592572},
   publisher={IEEE}
 }
 ```
