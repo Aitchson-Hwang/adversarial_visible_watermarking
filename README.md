@@ -1,6 +1,6 @@
-# New Visible Watermark Protection Mechanism Based on Information Hiding
+# *New Visible Watermark Protection Mechanism Based on Information Hiding*
 
-[Paper](https://ieeexplore.ieee.org/document/11095771) / [New proposed dataset(LOGO-Multi and LOGO-Full)](https://huggingface.co/datasets/WendellH/Watermark_dataset_LOGO-Full_Multi) / [Other dataset (LOGO-H, LOGO-L, LOGO-Gray)](https://github.com/vinthony/deep-blind-watermark-removal?tab=readme-ov-file#Resources)
+[Paper](https://ieeexplore.ieee.org/document/11095771) / [Newly proposed dataset (LOGO-Multi and LOGO-Full)](https://huggingface.co/datasets/WendellH/Watermark_dataset_LOGO-Full_Multi) / [Other dataset (LOGO-H, LOGO-L, LOGO-Gray)](https://github.com/vinthony/deep-blind-watermark-removal?tab=readme-ov-file#Resources)
 
 To be continued...
 
@@ -15,21 +15,14 @@ With the rise of digital media, protecting image property has become a critical 
   author={Huang, Wenhong and Dai, Yunshu and Fei, Jianwei and Huang, Fangjun},
   journal={IEEE Transactions on Information Forensics and Security},
   year={2025},
+  volume={20},
+  pages={7764-7776},
+  doi={10.1109/TIFS.2025.3592572}
   publisher={IEEE}
 }
 ```
 
-### GB/T 7714
+### Plain Text
 ```
-Huang W, Dai Y, Fei J, et al. New Visible Watermark Protection Mechanism Based on Information Hiding[J]. IEEE Transactions on Information Forensics and Security, 2025.
-```
-
-### MLA
-```
-Huang, Wenhong, et al. "New Visible Watermark Protection Mechanism Based on Information Hiding." IEEE Transactions on Information Forensics and Security (2025).
-```
-
-### APA
-```
-Huang, W., Dai, Y., Fei, J., & Huang, F. (2025). New Visible Watermark Protection Mechanism Based on Information Hiding. IEEE Transactions on Information Forensics and Security.
+W. Huang, Y. Dai, J. Fei and F. Huang, "New Visible Watermark Protection Mechanism Based on Information Hiding," in IEEE Transactions on Information Forensics and Security, vol. 20, pp. 7764-7776, 2025, doi: 10.1109/TIFS.2025.3592572. keywords: {Watermarking;Perturbation methods;Visualization;Protection;Image restoration;Discrete wavelet transforms;Couplings;Symbols;Media;Data mining;Visible watermark;adversarial attack;watermark removal;copyright protection;data hiding},
 ```
