@@ -26,3 +26,8 @@ W. Huang, Y. Dai, J. Fei and F. Huang, "New Visible Watermark Protection Mechani
 ```
 
 # Instruction for code
+## Quick Start
+Install the requirement. 
+```bash
+pip install -r requirements.txt
+```
