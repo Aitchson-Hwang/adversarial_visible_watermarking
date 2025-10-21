@@ -28,7 +28,7 @@ W. Huang, Y. Dai, J. Fei, and F. Huang, "New Visible Watermark Protection Mechan
 # Instruction for code
 This repository contains the RIE module and the implementation of embedding adversarial perturbations to resist watermark removers using the RIE module. This repository also contains the implementation of the partially visible watermark removal network in the `wm_removers` directory.
 
-## Quick Start
+## How to Start
 ### Install the requirement
 ```bash
 pip install -r requirements.txt
