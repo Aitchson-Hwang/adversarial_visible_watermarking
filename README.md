@@ -22,10 +22,12 @@ With the rise of digital media, protecting image property has become a critical 
 
 ### Plain Text
 ```
-W. Huang, Y. Dai, J. Fei and F. Huang, "New Visible Watermark Protection Mechanism Based on Information Hiding," in IEEE Transactions on Information Forensics and Security, vol. 20, pp. 7764-7776, 2025, doi: 10.1109/TIFS.2025.3592572. keywords: {Watermarking;Perturbation methods;Visualization;Protection;Image restoration;Discrete wavelet transforms;Couplings;Symbols;Media;Data mining;Visible watermark;adversarial attack;watermark removal;copyright protection;data hiding},
+W. Huang, Y. Dai, J. Fei, and F. Huang, "New Visible Watermark Protection Mechanism Based on Information Hiding," in IEEE Transactions on Information Forensics and Security, vol. 20, pp. 7764-7776, 2025, doi: 10.1109/TIFS.2025.3592572. keywords: {Watermarking;Perturbation methods;Visualization;Protection;Image restoration;Discrete wavelet transforms;Couplings;Symbols;Media;Data mining;Visible watermark;adversarial attack;watermark removal;copyright protection;data hiding},
 ```
 
 # Instruction for code
+This repository contains the RIE module and the implementation of embedding adversarial perturbations to resist watermark removers using the RIE module. This repository also contains the implementation of the partially visible watermark removal network in the `wm_removers` directory.
+
 ## Quick Start
 ### Install the requirement
 ```bash
@@ -36,3 +38,51 @@ pip install -r requirements.txt
 ### Prepare the pretrained watermark removal models
 [SLBR(pretrained on LOGO-Multi dataset)](https://drive.google.com/drive/folders/1fTe1VhCnCCSSaszvDCXey0KBuZc--7i2?usp=sharing)
 ### Modify the content in example.sh according to your actual situation
+```bash
+#!/bin/bash
+# ================================================================
+# Script Name: example.sh
+# Description:
+#   This script runs the Adversarial Visible Watermarking experiment
+#   using the SLBR model (DENet, SplitNet, MNet, etc. are also applicable. 
+#        You only need to (or not) add some fields unique to their models. 
+#        You can find them in the .sh files in their source code.). 
+#   This script launches the training or attack process
+#   with customizable parameters such as learning rate, dataset path,
+#   and attack configuration.
+#
+# Usage:
+#   bash example.sh
+#
+# Notes:
+#   - Modify the paths below to match your environment.
+#   - Requires a CUDA-capable GPU and dependencies from requirements.txt.
+#
+# Arguments:
+#   --epochs             Number of training epochs.
+#   --schedule           Learning rate schedule strategy.
+#   --lr                 Initial learning rate.
+#   --resume             Path to the pretrained watermark removal model checkpoint.
+#   --arch               Model architecture to use (e.g., SLBR).
+#   -c                   Path to save.
+#   --attack_method      Adversarial attack method (e.g., pgd_inn, pgd).
+#   --limited-dataset    Whether to use a limited dataset (1 = True).
+#   --use_rie            Enable the RIE module to insert perturabtion.
+#   --epsilon            Perturbation limit for general adversarial attack (e.g., pgd).
+#   --step_alpha         Step size for PGD attack.
+#   --stopnum            How many adversairal images to generate.
+#   --iters              Number of general attack iterations.
+#   --rie_iters          Number of the RIE module iterations.
+#   --simage             Whether to save adversarial images.
+#   --lambda_p           Loss weight for perceptual loss.
+#   --input-size         Input image size.
+#   --train-batch        Training batch size.
+#   --test-batch         Testing batch size.
+#   --use_refine         Enable refinement module, only used for the SLBR model.
+#   --base-dir           Path to the dataset root directory.
+#   --data               Dataset name (e.g., 'multi', 'full', '10kgray', '10kmid', etc.).
+#
+# Example:
+#   bash example.sh
+# ================================================================
+```
