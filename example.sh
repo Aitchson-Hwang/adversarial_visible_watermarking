@@ -1,6 +1,6 @@
 #!/bin/bash
 # ================================================================
-# Script Name: run_adversarial_watermark_removal.sh
+# Script Name: example.sh
 # Description:
 #   This script runs the Adversarial Visible Watermarking experiment
 #   using the SLBR model (DENet, SplitNet, MNet, etc. are also applicable. 
