@@ -27,7 +27,12 @@ W. Huang, Y. Dai, J. Fei and F. Huang, "New Visible Watermark Protection Mechani
 
 # Instruction for code
 ## Quick Start
-Install the requirement. 
+### Install the requirement
 ```bash
 pip install -r requirements.txt
 ```
+### Prepare the dataset
+[Newly proposed dataset (LOGO-Multi and LOGO-Full)](https://huggingface.co/datasets/WendellH/Watermark_dataset_LOGO-Full_Multi) / [Other dataset (LOGO-H, LOGO-L, LOGO-Gray)](https://github.com/vinthony/deep-blind-watermark-removal?tab=readme-ov-file#Resources)
+### Prepare the pretrained watermark removal models
+[SLBR(pretrained on LOGO-Multi dataset)](https://drive.google.com/drive/folders/1fTe1VhCnCCSSaszvDCXey0KBuZc--7i2?usp=sharing)
+### Modify the content in example.sh according to your actual situation
