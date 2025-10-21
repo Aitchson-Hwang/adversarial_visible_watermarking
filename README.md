@@ -36,7 +36,7 @@ pip install -r requirements.txt
 ### Prepare the dataset
 [Newly proposed dataset (LOGO-Multi and LOGO-Full)](https://huggingface.co/datasets/WendellH/Watermark_dataset_LOGO-Full_Multi) / [Other dataset (LOGO-H, LOGO-L, LOGO-Gray)](https://github.com/vinthony/deep-blind-watermark-removal?tab=readme-ov-file#Resources)
 ### Prepare the pretrained watermark removal models
-[SLBR(pretrained on LOGO-Multi dataset)](https://drive.google.com/drive/folders/1fTe1VhCnCCSSaszvDCXey0KBuZc--7i2?usp=sharing)
+e.g., [SLBR(pretrained on LOGO-Multi dataset)](https://drive.google.com/drive/folders/1fTe1VhCnCCSSaszvDCXey0KBuZc--7i2?usp=sharing). You can go to the repository of other visible watermark removal networks to download pre-trained models.
 ### Modify the content in example.sh according to your actual situation
 ```bash
 #!/bin/bash
