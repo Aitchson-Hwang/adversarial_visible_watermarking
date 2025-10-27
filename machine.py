@@ -13,7 +13,7 @@ from torchvision.models import vgg19
 from imutils import im_to_numpy
 import wm_removers as archs
 import RIE_module.common as common
-from RIE_module.model import *
+from RIE_module.affine_blocks import *
 from RIE_module.utils import *
 from RIE_module.vgg_loss_adv import *
 
@@ -606,4 +606,5 @@ class Attack:
         if self.args.gan_norm:
             return (x+1.0)/2.0
         else:
+
             return x
