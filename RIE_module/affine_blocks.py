@@ -3,33 +3,6 @@ import torch.nn as nn
 from RIE_module.dense import Dense
 
 # =======================================================================================
-# Building of the RIE Module
-# =======================================================================================
-class Model(nn.Module):
-    def __init__(self):
-        super(Model, self).__init__()
-
-        self.model = affine_blocks()
-
-    def forward(self, x, rev=False):
-
-        if not rev:
-            out = self.model(x)
-
-        else:
-            out = self.model(x, rev=True)
-
-        return out
-
-def init_model(mod):
-    for key, param in mod.named_parameters():
-        split = key.split('.')
-        if param.requires_grad:
-            param.data = 0.01 * torch.randn(param.data.shape).cuda()
-            if split[-2] == 'conv5':
-                param.data.fill_(0.)
-
-# =======================================================================================
 # Architecture of the RIE Module
 # =======================================================================================
 class affine_blocks(nn.Module):
@@ -95,3 +68,31 @@ class affine_block(nn.Module):
             for_dot_1, for_add_1 = self.r(y1), self.g(y1)
             y2 = self.exp_and_k(for_dot_1) * x2 + for_add_1
         return torch.cat((y1, y2), 1)
+    
+
+# =======================================================================================
+# Building of the RIE Module
+# =======================================================================================
+class Model(nn.Module):
+    def __init__(self):
+        super(Model, self).__init__()
+
+        self.model = affine_blocks()
+
+    def forward(self, x, rev=False):
+
+        if not rev:
+            out = self.model(x)
+
+        else:
+            out = self.model(x, rev=True)
+
+        return out
+
+def init_model(mod):
+    for key, param in mod.named_parameters():
+        split = key.split('.')
+        if param.requires_grad:
+            param.data = 0.01 * torch.randn(param.data.shape).cuda()
+            if split[-2] == 'conv5':
+                param.data.fill_(0.)
